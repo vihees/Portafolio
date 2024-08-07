@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
+
+body {
+    background-color: darkgray;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* CSS PRIMERA SECCION */
+.seccion {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    padding: 50px;
+    margin-top: 1px;
+}
+
+.subseccion{
+    width: 50%;
+}
+
+.profesion{
+    text-decoration: underline;
+}
+
+.perfil {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+
+.status {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccd1d1;
+    padding: 8px;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.p-status {
+    margin: 0 10px;
+    align-items: center;
+}
+
+.circulo {
+    height: 13px;
+    width: 13px;
+    background-color: green;
+    border-radius: 50px;
+}
+
+.present {
+    border-bottom: 1px solid #ccd1d1;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 28px;
+}
+
+.btn-work {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.btn-cv {
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    text-decoration: underline;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+/* CSS SEGUNDA SECCION */
+.logos-seccion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+    border-radius: 40px;
+    border: 2px solid #ccd1d1;
+    width: 45px;
+    padding: 15px;
+}
+
+/* CSS TERCERA SECCION */
+.experiencia {
+    width: 50%;
+    margin: 0;
+    padding: 0;}
+
+.educacion {
+    font-size: 17px;
+}
+
+.lugar{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.lugar:visited {
+    color: black;
+}
+
+.rango{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 17px;
+}
+
+.año {
+    border: 1px solid #ccd1d1;
+    border-radius: 40px;
+    width: 35%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.linea {
+    border-bottom: 1px solid #ccd1d1;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.t-work {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px;
+}
+
+/* CSS CUARTA SECCION */
+.i-work {
+    width: 25px;
+    height: 25px;
+}
+
+/* CSS QUINTA SECCION  */
+.seccion-w{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1px;
+}
+
+.s-work {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 393px;
+    margin: 0.5px;
+    text-align: center;
+}
+
+.s-work img {
+    width: 100%;
+    height: auto;
+}
+
+.s-work h4 {
+    font-size: 1.2em;
+}
+
+.sw-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    font-size: 0.9em;
+    color: #555;
+    white-space: nowrap;
+}
+
+/* CSS SEXTA SECCION */
+.sw-portafolio {
+    padding: 15px 30px 15px 30px;
+    justify-content: center;
+}
+
+.link:visited {
+    color: black;
+}
+
+/* CSS SEPTIMA SECCION  */
+.t-servicios {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px;
+}
+
+.i-servicios {
+    width: 25px;
+}
+
+/* CSS OCTAVA SECCION  */
+
+/* CSS CONTACTO */
+.t-contacto {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px;
+}
+
+.i-contacto {
+    width: 25px;
+}
+
+/* CSS FORMULARIO CONTACTO  */
+
+.seccion .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.seccion .formulario input[type="text"],
+.seccion .formulario input[type="email"],
+.seccion .formulario textarea {
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #a4a4aa;
+    font-family: "Quicksand", sans-serif;
+}
+
+.seccion .formulario input[type="text"]:focus,
+.seccion .formulario input[type="email"]:focus,
+.seccion .formulario textarea:focus {
+    border: 1px solid #3895ea;
+}
+
+.seccion .formulario input[type="text"],
+.seccion .formulario input[type="email"] {
+    width: 44%;
+    margin-bottom: 1px;
+}
+
+.seccion .formulario textarea{
+    width: 94%;
+    height: 100px;
+    min-width: 94%;
+    min-height: 100px;
+    max-height: 200px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+.seccion .formulario .boton {
+    margin: auto;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-family: "Quicksand", sans-serif;
+}
+ 
