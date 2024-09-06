@@ -10,12 +10,22 @@
 
 <body>
     <div class="contenedor">
+        <!-- Barra de Navegacion -->
+        <div class="menu">
+            <nav class="navbar">
+                <a href="#" class="nb-a"><img class="nb-icono" src="./img/home1.png" alt="home"></a>
+                <a href="#work" class="nb-a"><img class="nb-icono" src="./img/bag1.png" alt="bag"></a>
+                <a href="#servicio" class="nb-a"><img class="nb-icono" src="./img/tresopuntos1.png" alt="servivios"></a>
+                <a href="#" class="nb-a"><img class="nb-icono" src="./img/chat1.png" alt="blog"></a>
+                <a href="#contacto" class="nb-a"><img class="nb-icono" src="./img/send1.png" alt="contacto"></a>
+            </nav>
+        </div>
         <!-- Primera seccion -->
         <div class="seccion">
             <!-- seccion de la izquierda -->
             <div class="subseccion">
                 <h1>Vivian Hernandez</h1>
-                <p class="profesion">Gourmet</p>
+                <p class="profesion">Professional Chef</p>
                 <div class="status">
                     <p class="p-status">Availabel for work</p>
                     <div class="circulo"></div>
@@ -24,24 +34,24 @@
             </div>
             <!-- seccion de la derecha -->
             <div class="subseccion">
-                <p class="present">¡Hola! <strong>Soy Vivian</strong>, una gastrónoma apasionada por crear experiencias
+                <p class="present">¡Hola! <strong>Soy Vivian</strong>, una chef apasionada por crear experiencias
                     culinarias <strong>únicas</strong> que deleitan todos los sentidos.</p>
                 <div>
-                    <button class="btn-work">WORK</button>
-                    <button class="btn-cv">CV DOWNLOAD</button>
+                    <a href="#work"><button class="btn-work">WORK</button></a>
+                    <a href="CV Portafolio.pdf" download="CV Vivian"><button class="btn-cv">CV DOWNLOAD</button></a>
                 </div>
             </div>
         </div>
         <!-- Segunda seccion -->
         <div class="seccion logos-seccion">
-            <img src="img/cake.png" alt="icono" class="item">
-            <img src="img/champagne-glass.png" alt="icono" class="item">
-            <img src="img/chef.png" alt="icono" class="item">
-            <img src="img/frying-pan (1).png" alt="icono" class="item">
-            <img src="img/mixer.png" alt="icono" class="item">
-            <img src="img/kitchen-pack.png" alt="icono" class="item">
-            <img src="img/water-bottle.png" alt="icono" class="item">
-            <img src="img/frying-pan.png" alt="icono" class="item">
+            <div class="sl"><img src="img/s1.png" alt="icono" class="item"></div>
+            <div class="sl"><img src="img/s2.png" alt="icono" class="item"></div>
+            <div class="sl"><img src="img/s3.png" alt="icono" class="item"></div>
+            <div class="sl"><img src="img/s4.png" alt="icono" class="item"></div>
+            <div class="sl"><img src="img/s5.png" alt="icono" class="item"></div>
+            <div class="sl"><img src="img/s6.png" alt="icono" class="item"></div>
+            <div class="sl"><img src="img/s7.png" alt="icono" class="item"></div>
+            <div class="sl"><img src="img/s8.png" alt="icono" class="item"></div>
         </div>
         <!-- Tercera seccion -->
         <div class="seccion">
@@ -79,7 +89,7 @@
             </div>
         </div>
         <!-- Cuarta seccion -->
-        <div class="seccion t-work">
+        <div class="seccion t-work" id="work">
             <h3>WORK</h3>
             <img src="img/shopping-bag.png" alt="bag" class="i-work">
         </div>
@@ -119,12 +129,22 @@
             <p>Curious for More? Explore Our <a href="#" class="link">Portafolio</a> of Works.</p>
         </div>
         <!-- Septima seccion -->
-        <div class="seccion t-servicios">
+        <div class="seccion t-servicios" id="servicio">
             <h3>SERVICIOS</h3>
             <img src="img/nav 3.png" alt="tres puntos" class="i-servicios">
         </div>
         <!-- Octava seccion -->
         <div class="servicios">
+            <ul>
+                <h3>Elaboración de Portafolios de Trabajo</h3>
+                <p>Creamos portafolios profesionales personalizados que destacan tus habilidades y proyectos.</p>
+            </ul>
+        </div>
+        <div class="servicios">
+            <ul>
+                <h3>Desarrollo de Páginas para Restaurantes</h3>
+                <p>Diseñamos páginas web atractivas y funcionales para restaurantes, que incluyen menús interactivos y sistemas de reservas.</p>
+            </ul>
         </div>
         <!-- CONTACTO -->
         <div class="seccion t-contacto">
@@ -132,13 +152,23 @@
             <img src="img/send.png" alt="send" class="i-contacto">
         </div>
         <!-- FORMULARIO  -->
-        <div class="seccion">
+        <div class="seccion" id="contacto">
             <form id="form" class="formulario">
                 <input type="text" name="from_name" id="from_name" placeholder="Nombre" required>
                 <input type="email" name="email_id" id="email_id" placeholder="E-mail" required>
                 <textarea type="text" name="message" id="message" placeholder="Massage" required></textarea>
                 <input type="submit" class="boton" id="button" value="Send">
             </form>
+        </div>
+        <!-- REDES SOCIALES -->
+        <div class="s-redes">
+            <div class="social-links">
+                <a href="https://www.facebook.com/" class="redes">Facebook</a>
+                <a href="https://x.com/" class="redes">Twitter</a>
+                <a href="https://github.com/vihees" class="redes">GitHub</a>
+                <a href="https://www.instagram.com/" class="redes">Instagram</a>
+                <a href="https://www.youtube.com/" class="redes">Youtube</a>
+            </div>
         </div>
         <!-- CODIGO JS-EMAIL -->
         <script src="./email.js"></script>

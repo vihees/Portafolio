@@ -13,6 +13,37 @@ body {
     margin-top: 50px;
 }
 
+/* CSS BARRA DE NAVEGACION */
+.menu {
+    padding-bottom:20px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    height: 65px;
+    background-color: #000;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nb-a {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nb-icono {
+    width: 24px;
+    height: 23px;
+}
+.nb-icono:hover {
+    transform: scale(1.1);
+}
+
 /* CSS PRIMERA SECCION */
 .seccion {
     background-color: white;
@@ -63,7 +94,7 @@ body {
     border-bottom: 1px solid #ccd1d1;
     margin-top: 10px;
     padding: 10px;
-    font-size: 28px;
+    font-size: 29px;
 }
 
 .btn-work {
@@ -89,18 +120,23 @@ body {
     justify-content: space-between;
 }
 
-.item{
+.sl {
+    border: 1px solid #ccd1d1;
     border-radius: 40px;
-    border: 2px solid #ccd1d1;
-    width: 45px;
-    padding: 15px;
+    padding: 15px;  
+}
+
+.item {
+    width: 40px;
+    height: 40px;
 }
 
 /* CSS TERCERA SECCION */
 .experiencia {
     width: 50%;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+}
 
 .educacion {
     font-size: 17px;
@@ -220,6 +256,13 @@ body {
 }
 
 /* CSS OCTAVA SECCION  */
+.servicios {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 1px;
+
+}
 
 /* CSS CONTACTO */
 .t-contacto {
@@ -265,14 +308,10 @@ body {
     margin-bottom: 1px;
 }
 
-.seccion .formulario textarea{
+.seccion .formulario textarea {
     width: 94%;
     height: 100px;
-    min-width: 94%;
-    min-height: 100px;
-    max-height: 200px;
-    margin-bottom: 10px;
-    margin: auto;
+    resize: none;
 }
 
 .seccion .formulario .boton {
@@ -280,10 +319,150 @@ body {
     background-color: black;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 15px 40px;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 10px;
     font-family: "Quicksand", sans-serif;
 }
- 
+
+.s-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-top: 1px; 
+}
+
+.social-links {
+    display: flex;
+    justify-content:center ;
+    gap: 10px;
+  }
+  
+.redes {
+    display: inline-block;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+.redes:hover {
+    background-color: #e0e0e0;
+  }
+/* MEDIA QUERY */
+@media screen and (min-width: 766px) {
+    /* .menu{
+        padding-bottom: 1px;
+    } */
+    .navbar {
+        margin-top: 70px;
+        flex-direction: column; 
+        height: 320px; 
+        width: 65px; 
+        border-radius: 40px; 
+        /* margin-left: -90px;
+        margin-bottom: -500px; */
+        position: fixed;
+        top: 0;
+        left: calc(50% - 400px);
+        transform: translateX(-100px);
+    }
+
+    .nb-a {
+        margin: 20px 0; 
+    }
+
+    .nb-icono {
+        width: 23px; 
+        height: 22px;
+    }
+
+    .nb-icono:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* Estilos para pantallas pequeñas, como móviles o tablets */
+@media only screen and (max-width: 766px) {
+    /* Ajustes generales */
+    .seccion {
+      flex-direction: column; /* Coloca las subsecciones una debajo de la otra */
+      padding: 20px;
+    }
+  
+    .subseccion {
+      width: 100%; /* Las subsecciones ocupan el 100% del ancho */
+    }
+  
+    .status {
+      width: 100%; /* El estado también ocupa todo el ancho */
+    }
+  
+    .btn-work,
+    .btn-cv {
+      width: 100%; /* Los botones también ocupan todo el ancho */
+      text-align: center;
+    }
+  
+    /* Segunda Sección */
+    .logos-seccion {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sl {
+      margin-bottom: 10px; /* Espacio entre los elementos */
+    }
+  
+    /* Ajustes para la tercera sección (experiencia) */
+    .experiencia {
+      width: 100%; /* Experiencia ocupa el 100% */
+    }
+  
+    .rango {
+      flex-direction: column; /* Para evitar que se deformen */
+      align-items: flex-start;
+    }
+  
+    .año {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Ajustes para las secciones generales */
+    .t-work, .t-servicios, .t-contacto {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Ajustes para las imágenes */
+    .s-work {
+      width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    }
+  
+    .social-links {
+      flex-direction: column;
+    }
+  
+    /* Formulario */
+    .seccion .formulario input[type="text"],
+    .seccion .formulario input[type="email"] {
+      width: 100%;
+    }
+  
+    .seccion .formulario textarea {
+      width: 100%;
+    }
+  }
+  
+
